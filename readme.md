@@ -1,1 +1,1 @@
-test doc
+This repository contains assignments for ITEC 3020.
