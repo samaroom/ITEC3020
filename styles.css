@@ -2,7 +2,7 @@ body {
 background-color: #D9D9D9;
 }
 .navbar{
-	background-color: black;
+	background-color: #333;
 	overflow:hidden;
 }
 /* Style the links inside the navigation bar */
