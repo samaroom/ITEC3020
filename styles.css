@@ -30,10 +30,11 @@ margin:0;
 .topnav a {
   color: #f2f2f2;
   text-align: center;
-  padding: 50px 100px;
+  padding: 50px 80px;
   text-decoration: none;
   margin-bottom: -4px;
   font-size: 17px;
+  font-family: "Lucida Console", "Courier New", monospace;
 }
 
 /* Change the color of links on hover */
@@ -42,11 +43,6 @@ margin:0;
   color: black;
 }
 
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #4CAF50;
-  color: white;
-}
 
 /*styling and positioning search field in navbar*/
 .topnav input[type=text] {
@@ -56,5 +52,8 @@ margin:0;
   padding: 10px 50px;
   text-decoration: none;
   font-size: 17px;
+  font-family: "Lucida Console", "Courier New", monospace;
+
 }
+
 
