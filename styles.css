@@ -1,8 +1,60 @@
 body {
 background-color: #D9D9D9;
+margin:0;
 }
-.square{
-	height: 50px;
-  width: 1000px;
-  background-color: #333;
+.topnav {
+  background-color: black;
+  overflow: hidden;
+  height: 150px;
 }
+
+/*Positioning company logo in navbar*/
+.logo {
+    display: inline-block;
+    vertical-align: left;
+    width: 200px;
+    height: 90px;
+    margin-right: 20px;
+    margin-top: 10px; 
+}
+/*positioning cart icon in navbar*/
+.cartlogo{
+	 display: inline-block;
+    vertical-align: right;
+    width: 50px;
+    height: 40px;
+    margin-left: 40px;
+    margin-bottom: -4px; 
+}
+/*Positioning links within navbar*/
+.topnav a {
+  float: center;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 40px 100px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/*styling and positioning search field in navbar*/
+.topnav input[type=text] {
+  float: center;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 50px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
