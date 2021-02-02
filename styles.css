@@ -13,13 +13,13 @@ margin:0;
     display: inline-block;
     vertical-align: left;
     width: 200px;
-    height: 90px;
+    height: 90%;
     margin-right: 20px;
-    margin-top: 10px; 
+    margin-bottom: -10px; 
 }
 /*positioning cart icon in navbar*/
 .cartlogo{
-	 display: inline-block;
+	display: inline-block;
     vertical-align: right;
     width: 50px;
     height: 40px;
@@ -28,11 +28,11 @@ margin:0;
 }
 /*Positioning links within navbar*/
 .topnav a {
-  float: center;
   color: #f2f2f2;
   text-align: center;
-  padding: 40px 100px;
+  padding: 50px 100px;
   text-decoration: none;
+  margin-bottom: -4px;
   font-size: 17px;
 }
 
