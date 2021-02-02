@@ -62,3 +62,7 @@ margin:0;
 
 }
 
+[class*="topnav"] {
+  width: 100%;
+}
+
