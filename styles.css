@@ -3,66 +3,34 @@ background-color: #D9D9D9;
 margin:0;
 }
 .topnav {
-  background-color: black;
+  background-color: #333;
   overflow: hidden;
-  height: 150px;
 }
 
-/*Positioning company logo in navbar*/
-.logo {
-    display: inline-block;
-    vertical-align: left;
-    width: 200px;
-    height: 90%;
-    margin-right: 20px;
-    margin-bottom: -10px; 
-}
-/*positioning cart icon in navbar*/
-.cartlogo{
-	display: inline-block;
-    vertical-align: right;
-    width: 50px;
-    height: 40px;
-    margin-left: 40px;
-    margin-bottom: -10px; 
-}
-/*Positioning links within navbar*/
+/* Style the links inside the navigation bar */
 .topnav a {
+  float: left;
+  display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 50px 80px;
+  padding: 14px 16px;
   text-decoration: none;
-  margin-bottom: -4px;
   font-size: 17px;
-  font-family: "Lucida Console", "Courier New", monospace;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: white;
+  background-color: #ddd;
   color: black;
 }
 
-
-/*styling and positioning search field in navbar*/
-.topnav input[type=text] {
-  float: center;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 10px 50px;
-  text-decoration: none;
-  font-size: 17px;
-  font-family: "Lucida Console", "Courier New", monospace;
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
 }
 
-.firstheading{
-	text-align:center;
-	font-family: "Lucida Console", "Courier New", monospace;
-	font-size: 50px;
-
-}
-
-@viewport {
-  width: device-width ;
-  zoom: 1.0 ;
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
 }
