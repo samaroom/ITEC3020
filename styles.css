@@ -38,9 +38,11 @@ div[class*="d"]{
   width:300px;
   height:400px;
   padding:50px;
+  max-width:100%;
 }
 .maintext {
   padding: 25px;
+  overflow:auto;
 }
 
 .button{
@@ -123,6 +125,22 @@ div[class*="d"]{
     margin-top: 30px;
     margin-left: 45px;
   }
-
-
+    
+  .main, .maintext{
+    width:100%;
+  }
 }
+
+  .youMayAlsoLike, .similar_items{
+    text-align: center;
+    margin-top: 60px;
+}
+  .img_also_jeans, .pink{
+    width:200px;
+    height:300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width:100%;
+}
+
