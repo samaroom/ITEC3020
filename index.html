@@ -2,27 +2,41 @@
 <html>
 <head>
   <link rel="stylesheet" href="styles.css"> <!--linking to css stylesheet-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
   <div class="topnav" id="myTopnav">
-  <a href="#home" class="active">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
+    <a href = "index.html" class="logo"> <img src="images/sklogo.png" class="sklogo" alt="logoimg"></a>
+    <a href="#home" class="active">Home</a>
+    <a href="#news">Jeans</a>
+    <a href="#contact">Winter</a>
+    <a href="#about">Accessories</a>
+    <a class="searchbar1">
+      <input type="text" class="searchbar" placeholder="Search.." name="search">
+    </a>
+    <a class="cart"><img src="images/cartlogo.png" class="cartlogo"></a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <div class="div1"></div>
+      <div class="div2"></div>
+      <div class="div3"></div>
+    </a>
 </div>
 <div class="main">
-  <img src="" alt="GIRLS HIGH RISE JEGGINS" class="image">
+<img id="myImage" src="images/blackjeans.jpg" alt="GIRLS HIGH RISE JEGGINGS" class="image">
 <div class="maintext">
-  <h4><b>GIRLS HIGH RISE JEGGINS</b></h4>
+  <h4><b>GIRLS HIGH RISE JEGGINGS</b></h4>
   <h4>CAD$ 69.95</h4>
   <p>Colours</p>
-  <img src="/Users/katya/Desktop/uwe-jelting-rRq4REevreE-unsplash.jpg" alt="jeans color" class="color_image_j">
-  <img src="/Users/katya/Desktop/2020-black-crystalline-peaks-image.jpg" alt="jeans color" class="color_image_j">
+
+  <button onclick="document.getElementById('myImage').src='images/blackjeans.jpg'">
+  <img src="images/black.jpg" class="color_image_j">
+  </button>
+  <button onclick="document.getElementById('myImage').src='images/bluejeans.jpg'">
+  <img src="images/blue.jpg" class="color_image_j">
+  </button>
+
+
   <p>Sizes</p>
   <button type="button" disabled class="button_Size">2</button>
   <button type="button" disabled class="button_Size">4</button>
@@ -32,7 +46,7 @@
   <p>Description: Ripped classic high rise jeggings for girls</p>
   <dl>
      <dt>Material:</dt>
-     <dd>- Made with 78% cotton, 20% polyester and 2% elastane.</dd> 
+     <dd>- Made with 78% cotton, 20% polyester and 2% elastane.</dd>
      <dd>- Machine Washable</dd>
   </dl>
 </div>
@@ -46,5 +60,15 @@
 
 </div>
 
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 </body>
 </html>
