@@ -1,39 +1,24 @@
 function myFunction() { 
       var x = document.getElementById("myText").value; 
-      var lettergrade;
-      if(x <= 39){
-      lettergrade = "Your grade is a F.";
-  	  }
-  	  	else if(x <= 49 ){
-  	  		lettergrade = "Your grade is an E.";
-  	  	}
-  	  	else if(x <= 54 ){
-  	  		lettergrade = "Your grade is a D.";
-  	  	}
-  	  	else if(x <= 59 ){
-  	  		lettergrade = "Your grade is a D+.";
-  	  	}
-  	  	else if(x <= 64 ){
-  	  		lettergrade = "Your grade is a C.";
-  	  	}
-  	  	else if(x <= 69 ){
-  	  		lettergrade = "Your grade is a C+.";
-  	  	}
-  	  	else if(x <= 74 ){
-  	  		lettergrade = "Your grade is a B.";
-  	  	}
-  	  	else if(x <= 79 ){
-  	  		lettergrade = "Your grade is a B+.";
-  	  	}
-  	  	else if(x <= 89 ){
-  	  		lettergrade = "Your grade is a A.";
-  	  	}
-  	  	else if(x <= 100 ){
-  	  		lettergrade = "Your grade is a A+.";
-  	  	}
+    
+      var reverse = 0;
+      var temp = x; //temporary place holder to be used in if statement
+      var response; //variable to capture response from if statements
+      var indnum; //place holder to hold digits.
 
+      while(x >0){
+        indnum= x%10;
+        reverse = (reverse*10)+indnum;
+        x = parseInt(x/10);
+      }
+      if(reverse == temp ){
+        response = "Yes";
+      }
+      else if(reverse != temp){
 
-  	  document.getElementById("demo").innerHTML = lettergrade;
+        response = "No";
+      }
+  	  document.getElementById("demo").innerHTML = response;
   	 }
 
 
