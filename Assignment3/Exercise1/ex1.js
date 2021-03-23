@@ -1,6 +1,6 @@
 function myFunction() { 
       var x = document.getElementById("myText").value; 
-      var lettergrade;
+      var lettergrade; //placeholder for each response of if statement
       if(x <= 39){
       lettergrade = "Your grade is a F.";
   	  }
